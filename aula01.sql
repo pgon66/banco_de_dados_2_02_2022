@@ -19,9 +19,9 @@ USE aula01;
 DROP TABLE IF EXISTS students;
 
 CREATE TABLE students (
-    id_student            INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    id_student          INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, 
     first_name          VARCHAR(255) NOT NULL,
-    last_name         VARCHAR(255) NOT NULL,
+    last_name           VARCHAR(255) NOT NULL,
     gender ENUM         ('MA', 'FE'),
     code_registration   INTEGER UNIQUE,
     status              BOOLEAN DEFAULT true,
