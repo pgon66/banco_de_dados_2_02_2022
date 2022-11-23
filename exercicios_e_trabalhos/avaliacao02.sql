@@ -87,7 +87,7 @@ START TRANSACTION;
 COMMIT;
 
 /*Exibe a tabela após o COMMIT*/
-SELECT "BEFORE COMMIT" AS 'LOG'; 
+SELECT "AFTER COMMIT" AS 'LOG'; 
 SELECT pedro.rg AS RG, goncalves.cpf AS CPF FROM pedro INNER JOIN goncalves ON pedro.id_pedro = goncalves.id_goncalves;
     
 DELIMITER $$
